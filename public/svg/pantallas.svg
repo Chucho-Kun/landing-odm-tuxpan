@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 35.79 35.79">
+  <!-- Generator: Adobe Illustrator 29.8.6, SVG Export Plug-In . SVG Version: 2.1.1 Build 1)  -->
+  <defs>
+    <style>
+      .st0 {
+        mask: url(#mask);
+      }
+
+      .st1 {
+        fill: #003565;
+      }
+
+      .st2 {
+        filter: url(#luminosity-invert-noclip);
+      }
+
+      .st3 {
+        fill: #fff;
+      }
+    </style>
+    <filter id="luminosity-invert-noclip" x="2.44" y="5.47" width="30.91" height="24.84" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feFlood flood-color="#fff" result="bg"/>
+      <feBlend in="cm" in2="bg"/>
+    </filter>
+    <mask id="mask" x="2.44" y="5.47" width="30.91" height="24.84" maskUnits="userSpaceOnUse">
+      <g class="st2">
+        <g>
+          <circle class="st3" cx="21.72" cy="27.81" r="1.32"/>
+          <circle class="st3" cx="24.82" cy="27.81" r="1.32"/>
+          <circle class="st3" cx="27.91" cy="27.81" r="1.32"/>
+        </g>
+      </g>
+    </mask>
+  </defs>
+  <g class="st0">
+    <path class="st1" d="M30.06,5.47H5.73c-1.81,0-3.29,1.48-3.29,3.29v18.25c0,1.81,1.48,3.29,3.29,3.29h24.32c1.81,0,3.29-1.48,3.29-3.29V8.77c0-1.81-1.48-3.29-3.29-3.29ZM29.04,25.1H6.75V8.94h22.29v16.17Z"/>
+  </g>
+  <g>
+    <path class="st1" d="M9.65,12.95h1.96v3.31h3.8v-3.31h1.96v8.88h-1.96v-3.84h-3.8v3.84h-1.96v-8.88Z"/>
+    <path class="st1" d="M19.17,12.95h2.94c.71,0,1.39.08,2.03.24.64.16,1.2.42,1.67.77.48.36.85.82,1.14,1.39.28.57.42,1.26.42,2.07,0,.72-.14,1.35-.41,1.9-.27.55-.64,1.01-1.1,1.38-.46.37-.99.65-1.59.85-.6.19-1.23.29-1.89.29h-3.2v-8.88ZM21.13,20.02h1.02c.45,0,.87-.05,1.26-.14.39-.09.73-.24,1.01-.46.28-.21.51-.49.67-.84.16-.35.24-.77.24-1.27,0-.43-.08-.81-.24-1.14-.16-.32-.38-.59-.66-.8-.28-.21-.6-.37-.97-.47s-.76-.16-1.17-.16h-1.15v5.27Z"/>
+  </g>
+</svg>
