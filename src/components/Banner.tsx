@@ -26,7 +26,7 @@ export default function Banner() {
 
             </div>
             <div>
-                <img width={1000} height={696} src="/public/img/banner-autobus.jpg" alt="viaja a tuxpan con omnibus de mexico" />
+                <img width={1000} height={696} src="img/banner-autobus.jpg" alt="viaja a tuxpan con omnibus de mexico" />
             </div>
         </div>
   )

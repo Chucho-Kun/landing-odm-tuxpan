@@ -15,7 +15,7 @@ export default function Index() {
                 <p className="font-bold text-xl">Ventajas de viajar con </p>
             </div>
             <div>
-                <img className="mx-auto" width={300} src="/public/svg/logo-odm-lineal.svg" alt="logo omnibus de mexico" />
+                <img className="mx-auto" width={300} src="svg/logo-odm-lineal.svg" alt="logo omnibus de mexico" />
             </div>
         </div>
         <div>
@@ -50,10 +50,10 @@ export default function Index() {
         </div>
         <footer className="flex flex-col lg:flex-row w-full">
             <a href="https://odm.com.mx/app.html" target="_blank">
-                <img className="w-full lg:max-w-150 h-auto mx-auto" src="/public/img/footerA.jpg" alt="footer omnibus de mexico" />
+                <img className="w-full lg:max-w-150 h-auto mx-auto" src="img/footerA.jpg" alt="footer omnibus de mexico" />
             </a>
             <a href="https://odm.com.mx/" target="_blank">
-                <img className="w-full lg:max-w-150 h-auto mx-auto" src="/public/img/footerB.jpg" alt="footer omnibus de mexico" />
+                <img className="w-full lg:max-w-150 h-auto mx-auto" src="img/footerB.jpg" alt="footer omnibus de mexico" />
             </a>
         </footer>
     </main>
