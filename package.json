@@ -1,8 +1,9 @@
 {
-  "name": "odm-landing",
+  "name": "odm-landing-tuxpan",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "/landings/tuxpan",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
