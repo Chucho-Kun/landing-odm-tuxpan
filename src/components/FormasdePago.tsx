@@ -3,14 +3,15 @@ type fichaType = {
     icon: string
     titulo: string
     text: string
+    img: string
 }
 
 export default function FormasdePago() {
 
     const fichas: fichaType[] = [
-        { icon: "asiento", titulo: "Unidades Modernas" , text: "Con mayor espacio y comodidad"},
-        { icon: "escudo", titulo: "Viaja Seguro" , text: "Con los más altos estándares de limpieza y mantenimiento"},
-        { icon: "equipaje", titulo: "Mas Equipaje" , text: "Lleva todo lo que necesitas com amplios espacios"},
+        { icon: "tarjeta", titulo: "Meses sin Intereses" , text: "Paga a meses sin intereses con tarjetas participantes", img: ""},
+        { icon: "pagos", titulo: "Pagos Diferidos" , text: "Elige pagar en 3,6 ó 9 meses con pagos diferidos", img: ""},
+        { icon: "seguridad", titulo: "Pago 100% Seguro" , text: "Tus datos y pagos están protegidos en todo momento", img: ""},
     ]
 
   return (
@@ -18,7 +19,7 @@ export default function FormasdePago() {
 
         { fichas.map(ficha => (
             <div key={ficha.icon} className="w-50 h-45 rounded-2xl text-center border-2 border-gray-200">
-                <img width={40} height={40} className="mx-auto my-4" src={`/public/svg/${ ficha.icon }.svg`} alt="ventajas de viajar con omnibus de mexico" />
+                <img width={50} height={50} className="mx-auto my-4 bg-[#c02936] rounded-full p-1" src={`/public/svg/${ ficha.icon }.svg`} alt="ventajas de viajar con omnibus de mexico" />
                 <p className="font-black">{ ficha.titulo }</p>
                 <p className="my-2 text-sm">{ ficha.text }</p>
             </div>

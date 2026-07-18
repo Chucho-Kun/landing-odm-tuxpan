@@ -13,7 +13,7 @@ export default function Banner() {
   return (
     <div className="flex flex-col lg:flex-row bg-[#edf4fa]">
             <div>
-                <h3 className="text-4xl font-bold w-110 p-2 gb-[#1f2a4f] mb-2">Viaja cómodo y seguro en nuestros autobuses de última generación</h3>
+                <h3 className="text-4xl font-bold p-2 gb-[#1f2a4f] mb-2">Viaja cómodo y seguro en nuestros autobuses de última generación</h3>
 
                 { info.map(dato => (
                     <div className="flex ml-4 mb-2">

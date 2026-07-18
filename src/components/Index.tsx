@@ -39,7 +39,7 @@ export default function Index() {
             <FormasdePago />
 
         </div>
-        <div className="bg-[#edf4fa]">
+        <div className="bg-[#f5fafe]">
             <div className="text-center p-2">
                 <h3 className="text-xl font-bold">Desde Tuxpan te conectamos con todo México</h3>
                 <h4 className="text-md">Viaja a los principales destinos de la república Mexicana</h4>
@@ -48,9 +48,13 @@ export default function Index() {
             <Destinos />
 
         </div>
-        <footer>
-            <div>app</div>
-            <div>autobus</div>
+        <footer className="flex flex-col lg:flex-row w-full">
+            <a href="https://odm.com.mx/app.html" target="_blank">
+                <img className="w-full lg:max-w-150 h-auto mx-auto" src="/public/img/footerA.jpg" alt="footer omnibus de mexico" />
+            </a>
+            <a href="https://odm.com.mx/" target="_blank">
+                <img className="w-full lg:max-w-150 h-auto mx-auto" src="/public/img/footerB.jpg" alt="footer omnibus de mexico" />
+            </a>
         </footer>
     </main>
   )

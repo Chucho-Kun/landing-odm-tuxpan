@@ -1,4 +1,10 @@
-[{"id":"NLU","value":"Aeropuerto Felipe Angeles"},
+export type destinosType = {
+    id: string
+    value: string
+}
+
+export const destinosList: destinosType[] = [
+{"id":"NLU","value":"Aeropuerto Felipe Angeles"},
 {"id":"AGU","value":"Aguascalientes Central Autobus"},
 {"id":"ATA","value":"Atlacomulco Mex"},
 {"id":"CCA","value":"Camargo Chih"},
