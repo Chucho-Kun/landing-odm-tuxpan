@@ -15,6 +15,7 @@ export default function Header() {
             className="w-full max-w-full lg:max-w-230 mt-10 lg:mt-0" 
             src="img/main.webp" 
             alt="viaja a tuxpan con omnibus de mexico" 
+            fetchPriority="high"
         />
     </div>
 </div>
