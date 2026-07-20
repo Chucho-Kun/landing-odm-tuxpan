@@ -6,7 +6,7 @@ import Header from "./Header"
 
 export default function Index() {
   return (
-    <main className="max-w-300 mx-auto bg-white">
+    <main className="max-w-[1700px] mx-auto bg-white">
         
         <Header />
         
@@ -50,10 +50,10 @@ export default function Index() {
         </div>
         <footer className="flex flex-col lg:flex-row w-full">
             <a href="https://odm.com.mx/app.html" target="_blank">
-                <img className="w-full lg:max-w-150 h-auto mx-auto" src="img/footerA.jpg" alt="footer omnibus de mexico" />
+                <img className="w-full lg:max-w-220 h-auto mx-auto" src="img/footerA.webp" alt="footer omnibus de mexico" />
             </a>
             <a href="https://odm.com.mx/" target="_blank">
-                <img className="w-full lg:max-w-150 h-auto mx-auto" src="img/footerB.jpg" alt="footer omnibus de mexico" />
+                <img className="w-full lg:max-w-220 h-auto mx-auto" src="img/footerB.webp" alt="footer omnibus de mexico" />
             </a>
         </footer>
     </main>
