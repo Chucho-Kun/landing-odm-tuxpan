@@ -45,4 +45,9 @@ describe('Landing Page - Index', () => {
     expect(screen.getByTestId('banner')).toBeInTheDocument()
     expect(screen.getByTestId('destinos')).toBeInTheDocument()
   })
+
+  it('debe renderizar todas las imágenes', () => {
+    const imagenes = screen.getAllByRole('img')
+    expect(imagenes.length).toBe(3) // Hay 3 imágenes en tu componente
+  })
 })

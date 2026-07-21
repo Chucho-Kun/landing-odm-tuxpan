@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for Destinos.tsx</title>
+    <title>Code coverage report for Header.tsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="prettify.css" />
     <link rel="stylesheet" href="base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="index.html">All files</a> Destinos.tsx</h1>
+        <h1><a href="index.html">All files</a> Header.tsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
@@ -83,16 +83,12 @@
 <a name='L18'></a><a href='#L18'>18</a>
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
-<a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">6x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -103,24 +99,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { destinosList } from "../db/TXP"
-&nbsp;
-export default function Destinos() {
-&nbsp;
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
+export default function Header() {
   return (
-    &lt;div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4"&gt;
-        {destinosList.map(ficha =&gt; (
-            &lt;a key={ficha.id} href={`https://odm.com.mx/index.php?origen=TXP&amp;destino=${ ficha.id }`} target="_blank"&gt;
-                &lt;div
-                    key={ficha.id}
-                    className="w-50 h-20 cursor-pointer rounded-2xl text-center border-2 bg-[#1f2a4f] p-2 flex items-center justify-center"
-                    &gt;
-                    &lt;p className="text-white "&gt;{ficha.value}&lt;/p&gt;
-                &lt;/div&gt;
-            &lt;/a&gt;
-        ))}
+        &lt;div className="flex flex-col lg:flex-row"&gt;
+    {/* Columna izquierda */}
+    &lt;div className="flex-2"&gt;
+        &lt;img className="mt-1 mx-auto lg:mx-0" width={300} src="svg/logo-odm.svg" alt="logotipo Omnibus de Mexico" /&gt;
+        &lt;img className="mx-auto mt-10 w-full max-w-150" src="svg/texto-header.svg" alt="tuxpan, tu proximo destino" /&gt;
+        &lt;img className="mx-auto my-10 w-full max-w-150" src="svg/amenidades.svg" alt="prueba nuestro servicio plus" /&gt;
     &lt;/div&gt;
 &nbsp;
+    {/* Columna derecha - Imagen principal */}
+    &lt;div className="flex-2 flex justify-end lg:justify-end items-start"&gt;
+        &lt;img 
+            className="w-full max-w-full lg:max-w-230 mt-10 lg:mt-0" 
+            src="img/main.webp" 
+            alt="viaja a tuxpan con omnibus de mexico" 
+            fetchPriority="high"
+        /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
   )
 }
 &nbsp;</pre></td></tr></table></pre>
