@@ -1,0 +1,49 @@
+name: CI/CD - React Vite + TypeScript
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout del código
+        uses: actions/checkout@v4
+      
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Instalar dependencias
+        run: npm ci                        # Más rápido y confiable en CI que "npm install"
+
+      - name: 🔍 Type Checking (TypeScript)
+        run: npx tsc --noEmit
+
+      - name: ✨ Lint (ESLint)
+        run: npm run lint
+
+      - name: 🧪 Ejecutar Tests
+        run: npm test -- --run --coverage
+
+      - name: 🏗️ Build de Producción
+        run: npm run build
+
+      - name: 📦 Subir Build como Artefacto
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-dist
+          path: dist/
+          retention-days: 7
+
+      # Opcional: Mostrar tamaño del build (muy útil)
+      - name: 📊 Mostrar tamaño del build
+        run: |
+          echo "Tamaño del build:"
+          du -sh dist/
