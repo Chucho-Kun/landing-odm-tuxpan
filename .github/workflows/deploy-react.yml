@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: 📥 Checkout del código
         uses: actions/checkout@v4
-      
+
       - name: 🟢 Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -21,7 +21,7 @@ jobs:
           cache: 'npm'
 
       - name: 📦 Instalar dependencias
-        run: npm ci                        # Más rápido y confiable en CI que "npm install"
+        run: npm ci
 
       - name: 🔍 Type Checking (TypeScript)
         run: npx tsc --noEmit
@@ -30,8 +30,7 @@ jobs:
         run: npm run lint
 
       - name: 🧪 Ejecutar Tests
-          run: npx vitest run --coverage || echo "No se encontraron tests aún, continuando..."
-          continue-on-error: true     # ← Esto permite continuar aunque no haya tests
+        run: npm test -- --run --coverage
 
       - name: 🏗️ Build de Producción
         run: npm run build
@@ -43,8 +42,5 @@ jobs:
           path: dist/
           retention-days: 7
 
-      # Opcional: Mostrar tamaño del build (muy útil)
       - name: 📊 Mostrar tamaño del build
-        run: |
-          echo "Tamaño del build:"
-          du -sh dist/
+        run: du -sh dist/
