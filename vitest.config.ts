@@ -6,6 +6,6 @@ export default defineConfig({
   test: {
     environment: 'jsdom',
     globals: true,
-    setupFiles: './src/test/setup.ts', // opcional
+    setupFiles: './src/test/setup.ts',   // ← Aquí se carga jest-dom
   },
 })
