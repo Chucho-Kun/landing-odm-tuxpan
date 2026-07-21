@@ -30,7 +30,7 @@ jobs:
         run: npm run lint
 
       - name: 🧪 Ejecutar Tests
-        run: npm test -- --run --coverage
+        run: npx vitest run --coverage
 
       - name: 🏗️ Build de Producción
         run: npm run build
